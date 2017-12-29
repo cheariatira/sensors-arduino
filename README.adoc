@@ -1,0 +1,73 @@
+
+= CheAriaTira
+https://www.cheariatira.it/[www.cheariatira.it]
+:doctype: book
+:imagesdir: ./doc/images
+:title-logo-image: image:che-aria-tira.png[align="center"]
+:toc: left
+:toclevels: 3
+:sectnums:
+:sectanchors:
+:sectlinks:
+:sectnumlevels: 5
+:icons: font
+:docinfo:
+:experimental:
+
+image::che-aria-tira.png[250,250,role="center"]
+
+== Come si costruisce una centralina
+Obiettivo di questo capitolo e' mettere in grado chiunque di potersi costruire una centralina per il rilevamento delle polveri sottili pm2.5 e pm10.
+
+=== Componenti
+Per costruire una centralina e' necessario avere i seguenti componenti elettronici:
+
+
+==== Sensore
+
+.Sensore SDS011
+image::sds011-large.png[150,150,role="right"]
+
+http://inovafitness.com/en/a/chanpinzhongxin/95.html[SDS011] è il sensore che abbiamo scelto confrontando svariati sensori simili. Il suo compito compito è di restituire 2 numeri corrispondenti al pm2.5 e pm10. Puo' essere acquistato ad esempio su:
+
+https://www.ebay.it/sch/i.html?_from=R40&_sacat=0&LH_BIN=1&_nkw=sds011&rt=nc&LH_PrefLoc=2[ebay] , https://www.amazon.it/s/field-keywords=sds011[amazon], https://it.aliexpress.com/wholesale?SearchText=sds011[aliexpress]
+
+==== Controllore 
+
+.Controllore  esp8266 wemos-d1-mini
+image::esp8266-wemos-d1-mini-pinout.png[250,250,role="right"]
+
+https://wiki.wemos.cc/products:d1:d1_mini[Wemos D1 mini]
+e' il controllore. Il suo compito è di leggere i dati dal sensore e di invialrli via wifi al server centrale Puo' essere acquistato ad esempio su https://www.ebay.it/sch/i.html?_from=R40&_sacat=0&LH_BIN=1&_nkw=wemos+d1+mini&rt=nc&LH_PrefLoc=2[ebay] , https://www.amazon.it/s/field-keywords=wemos+d1+mini[amazon], https://it.aliexpress.com/wholesale?SearchText=wemos+d1+mini[aliexpress]
+
+==== Contenitore 
+
+.Scatola  GW44004
+image::scatola.png[150,150,role="right"]
+
+La scatola dovrà essere abbastanza resistente sia alle temperature che all'umidità. Dovrà essere ed avere almeno le dimensioni di 100X100X50. Eempio 
+GW44004 cassetta di derivazione  dimensioni 100X100X50 - PARETI CON PASSACAVI
+
+
+==== Alimentatore 
+
+.Micro usb  
+image::microusb.jpg[150,150,role="right"]
+
+Per l'alimentazione va bene un qualsiasi caricatore per cellulari da 5v ed almeno 1A micro usb come quello di figura.
+
+==== Tubo 
+
+.Tubo  
+image::tubo.jpg[250,250,role="right"]
+
+Tubo di 5mm di diametro lungo al massimo 50 cm che sarà collegato al sensore per prelevare l'aria da analizzare.
+Si prò trovare in una qualsiasi ferramenta
+
+
+=== Montaggio
+
+Per il montaggio è necessario avre un saldatore a stagno ed avere un minimo di manualità.
+
+
+
