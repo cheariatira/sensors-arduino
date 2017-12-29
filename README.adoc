@@ -2,7 +2,7 @@
 = CheAriaTira
 https://www.cheariatira.it/[www.cheariatira.it]
 :doctype: book
-:imagesdir: ./doc/images
+:imagesdir: ./docs/images
 :title-logo-image: image:che-aria-tira.png[align="center"]
 :toc: left
 :toclevels: 3
